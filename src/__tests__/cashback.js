@@ -1,4 +1,4 @@
-import calculateCashback from '../cashback.js';
+import calculateCashback from '../cashback';
 
 test('cashback at sum: 500', () => {
   const result = calculateCashback(500);
@@ -16,5 +16,5 @@ const handler = test.each(dataList);
 
 handler('prefix', (__, amount, expected) => {
   const result = calculateCashback(amount);
-  expect(result).toBe(expected)
+  expect(result).toBe(expected);
 });

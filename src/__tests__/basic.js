@@ -1,4 +1,4 @@
-import { calculteTotal } from '../calculate.js';
+import calculteTotal from '../calculate';
 
 test('basic test', () => {
   const result = 4;
